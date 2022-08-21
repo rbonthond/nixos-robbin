@@ -19,6 +19,7 @@
      alejandra cachix
      poetry httpie hyperfine
      kdiff3 meld colordiff
+     xorg.xdpyinfo glxinfo pciutils aha fwupd
   ];
 
   programs = {
