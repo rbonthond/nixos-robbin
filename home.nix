@@ -8,12 +8,17 @@
 
   home.packages = with pkgs; [
      firefox google-chrome
-     bash direnv nix-direnv
+     bash coreutils ksh tcsh zsh
+     gzip p7zip pigz unzip xz
+     direnv nix-direnv
      vim vscode kate libreoffice
      wget curl tmux jq mc neofetch
-     git git-lfs delta tig
+     git git-lfs delta tig p4 p4v
      htop procs lfs rclone rsync
      tree bat ncdu exa ripgrep fd fzf
+     alejandra cachix
+     poetry httpie hyperfine
+     kdiff3 meld colordiff
   ];
 
   programs = {
@@ -21,15 +26,19 @@
     bash.enable = true;
     command-not-found.enable = true;
     dircolors.enable = true;
-    direnv.enable = true;
-    direnv.nix-direnv.enable = true;
-    git.enable = true;
     htop.enable = true;
     jq.enable = true;
     starship.enable = true;
   };
 
+  programs.direnv = {
+    enable = true;
+    enableBashIntegration = true;
+    nix-direnv = { enable = true; };
+  };
+
   programs.git = {
+    enable = true;
     lfs.enable = true;
     delta.enable = true;
     userName = "Robbin Bonthond";
@@ -48,4 +57,9 @@
     };
   };
 
+  programs.exa = {
+    enable = true;
+    enableAliases = true;
+  };
+  
 }
