@@ -11,7 +11,8 @@
      bash coreutils ksh tcsh zsh
      gzip p7zip pigz unzip xz
      direnv nix-direnv
-     vim vscode kate libreoffice
+     kate krita kdevelop
+     vim vscode libreoffice-qt
      wget curl tmux jq mc neofetch
      git git-lfs delta tig p4 p4v
      htop procs lfs rclone rsync
@@ -20,6 +21,7 @@
      poetry httpie hyperfine
      kdiff3 meld colordiff
      xorg.xdpyinfo glxinfo pciutils aha fwupd
+     nextflow zoom-us slack
   ];
 
   programs = {
@@ -30,6 +32,7 @@
     htop.enable = true;
     jq.enable = true;
     starship.enable = true;
+    #kdeconnect.enable = true;
   };
 
   programs.direnv = {
@@ -63,4 +66,5 @@
     enableAliases = true;
   };
   
+  services.kdeconnect.enable = true;
 }
