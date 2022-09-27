@@ -32,7 +32,6 @@
     htop.enable = true;
     jq.enable = true;
     starship.enable = true;
-    #kdeconnect.enable = true;
   };
 
   programs.direnv = {
@@ -66,5 +65,6 @@
     enableAliases = true;
   };
   
-  services.kdeconnect.enable = true;
+  #services.plasma5Packages.kdeconnect.enable = true;
+  #services.kdeconnect.enable = true;
 }
