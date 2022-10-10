@@ -18,7 +18,7 @@
      htop procs lfs rclone rsync
      tree bat ncdu exa ripgrep fd fzf
      alejandra cachix
-     poetry httpie hyperfine
+     httpie hyperfine
      kdiff3 meld colordiff
      xorg.xdpyinfo glxinfo pciutils aha fwupd
      nextflow zoom-us slack
