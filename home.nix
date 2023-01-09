@@ -22,6 +22,8 @@
      kdiff3 meld colordiff
      xorg.xdpyinfo glxinfo pciutils aha fwupd
      nextflow zoom-us slack
+     libsForQt5.libksysguard lm_sensors
+     blender
   ];
 
   programs = {
@@ -66,5 +68,5 @@
   };
   
   #services.plasma5Packages.kdeconnect.enable = true;
-  #services.kdeconnect.enable = true;
+  services.kdeconnect.enable = true;
 }
