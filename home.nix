@@ -73,6 +73,10 @@
     libsForQt5.libksysguard
     lm_sensors
     blender
+    jetbrains.pycharm-professional
+    jetbrains.goland
+    jetbrains.webstorm
+    jetbrains.datagrip
   ];
 
   programs = {
