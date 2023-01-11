@@ -1,5 +1,8 @@
-{ pkgs, config, ... }: {
-
+{
+  pkgs,
+  config,
+  ...
+}: {
   home = {
     stateVersion = "22.11";
     username = "robbin";
@@ -7,23 +10,69 @@
   };
 
   home.packages = with pkgs; [
-     firefox google-chrome
-     bash coreutils ksh tcsh zsh
-     gzip p7zip pigz unzip xz
-     direnv nix-direnv
-     kate krita kdevelop
-     vim vscode libreoffice-qt
-     wget curl tmux jq mc neofetch
-     git git-lfs delta tig p4 p4v
-     htop procs lfs rclone rsync
-     tree bat ncdu exa ripgrep fd fzf
-     alejandra cachix
-     httpie hyperfine
-     kdiff3 meld colordiff
-     xorg.xdpyinfo glxinfo pciutils aha fwupd
-     nextflow zoom-us slack
-     libsForQt5.libksysguard lm_sensors
-     blender
+    firefox
+    google-chrome
+    bash
+    coreutils
+    ksh
+    tcsh
+    zsh
+    gzip
+    p7zip
+    pigz
+    unzip
+    xz
+    direnv
+    nix-direnv
+    alejandra
+    kate
+    krita
+    kdevelop
+    vim
+    vscode
+    libreoffice-qt
+    wget
+    curl
+    tmux
+    jq
+    mc
+    neofetch
+    git
+    git-lfs
+    delta
+    tig
+    p4
+    p4v
+    htop
+    procs
+    lfs
+    rclone
+    rsync
+    tree
+    bat
+    ncdu
+    exa
+    ripgrep
+    fd
+    fzf
+    alejandra
+    cachix
+    httpie
+    hyperfine
+    kdiff3
+    meld
+    colordiff
+    xorg.xdpyinfo
+    glxinfo
+    pciutils
+    aha
+    fwupd
+    nextflow
+    zoom-us
+    slack
+    libsForQt5.libksysguard
+    lm_sensors
+    blender
   ];
 
   programs = {
@@ -39,7 +88,7 @@
   programs.direnv = {
     enable = true;
     enableBashIntegration = true;
-    nix-direnv = { enable = true; };
+    nix-direnv = {enable = true;};
   };
 
   programs.git = {
@@ -66,7 +115,7 @@
     enable = true;
     enableAliases = true;
   };
-  
+
   #services.plasma5Packages.kdeconnect.enable = true;
   services.kdeconnect.enable = true;
 }
