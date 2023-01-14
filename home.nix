@@ -77,6 +77,7 @@
     jetbrains.goland
     jetbrains.webstorm
     jetbrains.datagrip
+    go python311 rustc perl ruby
   ];
 
   programs = {
