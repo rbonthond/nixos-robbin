@@ -21,4 +21,3 @@ banner 'Update Changes'
 nixStateDir="${NIX_STATE_DIR:-/nix/var/nix}"
 profilesPath="$nixStateDir/profiles/per-user/$USER"
 nix store diff-closures $(~/.nix-profile/bin/ls -dv $profilesPath/profile-*-link | tail -2)
-
