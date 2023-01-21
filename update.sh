@@ -14,7 +14,7 @@ nix flake update
 
 # update home manager
 banner 'Home Manager'
-home-manager switch -v
+home-manager switch -v --keep-going
 
 # show changes
 banner 'Update Changes'

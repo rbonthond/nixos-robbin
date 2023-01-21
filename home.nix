@@ -71,6 +71,7 @@
     zoom-us
     slack
     libsForQt5.libksysguard
+    libsForQt5.bismuth
     lm_sensors
     blender
     jetbrains.pycharm-professional
