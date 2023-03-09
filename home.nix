@@ -10,75 +10,78 @@
   };
 
   home.packages = with pkgs; [
-    firefox
-    google-chrome
-    bash
-    coreutils
-    ksh
-    tcsh
-    zsh
-    gzip
-    p7zip
-    pigz
-    unzip
-    xz
-    direnv
-    nix-direnv
+    aha
     alejandra
-    kate
-    krita
-    kdevelop
-    vim
-    vscode
-    libreoffice-qt
-    wget
+    alejandra
+    bash
+    bat
+    blender
+    cachix
+    colordiff
+    coreutils
     curl
-    tmux
-    jq
-    mc
-    neofetch
+    delta
+    direnv
+    exa
+    fd
+    firefox
+    fwupd
+    fzf
     git
     git-lfs
-    delta
-    tig
-    p4
-    p4v
+    glxinfo
+    go
+    google-chrome
+    gzip
     htop
-    procs
-    lfs
-    rclone
-    rsync
-    tree
-    bat
-    ncdu
-    exa
-    ripgrep
-    fd
-    fzf
-    alejandra
-    cachix
     httpie
     hyperfine
-    kdiff3
-    meld
-    colordiff
-    xorg.xdpyinfo
-    glxinfo
-    pciutils
-    aha
-    fwupd
-    nextflow
-    zoom-us
-    slack
-    libsForQt5.libksysguard
-    libsForQt5.bismuth
-    lm_sensors
-    blender
-    jetbrains.pycharm-professional
-    jetbrains.goland
-    jetbrains.webstorm
     jetbrains.datagrip
-    go python311 rustc perl ruby
+    jetbrains.goland
+    jetbrains.pycharm-professional
+    jetbrains.webstorm
+    jq
+    kate
+    kdevelop
+    kdiff3
+    krita
+    ksh
+    lfs
+    libreoffice-qt
+    libsForQt5.libksysguard
+    lm_sensors
+    mc
+    meld
+    ncdu
+    neofetch
+    nextflow
+    nix-direnv
+    p4
+    p4v
+    p7zip
+    pciutils
+    perl
+    pigz
+    procs
+    python311
+    rclone
+    ripgrep
+    rsync
+    ruby
+    rustc
+    slack
+    tcsh
+    tig
+    tmux
+    tree
+    unzip
+    vim
+    vscode
+    wget
+    xorg.xdpyinfo
+    xz
+    zoom-us
+    zsh
   ];
 
   programs = {
