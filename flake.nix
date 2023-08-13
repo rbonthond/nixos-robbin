@@ -1,5 +1,5 @@
 {
-  description = "nixos config";
+  description = "robbin's home-manager config";
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";

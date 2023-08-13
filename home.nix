@@ -9,6 +9,11 @@
     homeDirectory = "/home/robbin";
   };
 
+  xresources.properties = {
+    "Xcursor.size" = 16;
+    "Xfg.dpi" = 172;
+  };
+
   home.packages = with pkgs; [
     aha
     alejandra
