@@ -24,6 +24,8 @@
       };
     };
   in {
+    home-manager.useUserPackages = true;
+    home-manager.useGlobalPkgs = true;
     homeConfigurations = {
       "robbin" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;

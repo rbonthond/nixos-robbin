@@ -17,11 +17,11 @@
   home.packages = with pkgs; [
     aha
     alejandra
-    alejandra
     bash
     bat
     blender
     cachix
+    clinfo
     colordiff
     coreutils
     curl
@@ -82,6 +82,8 @@
     unzip
     vim
     vscode
+    vulkan-tools
+    wayland-utils
     wget
     xorg.xdpyinfo
     xz
