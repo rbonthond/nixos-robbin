@@ -27,7 +27,7 @@
     curl
     delta
     direnv
-    exa
+    eza
     fd
     firefox
     fwupd
@@ -127,7 +127,7 @@
     };
   };
 
-  programs.exa = {
+  programs.eza = {
     enable = true;
     enableAliases = true;
   };
