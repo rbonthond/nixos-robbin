@@ -89,6 +89,7 @@
     xz
     zoom-us
     zsh
+    whatsapp-for-linux
   ];
 
   programs = {
