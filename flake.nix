@@ -20,7 +20,6 @@
         keep-derivations = true;
         keep-outputs = true;
         inputs-fonts.acceptLicense = true;
-        firefox.enablePlasmaBrowserIntegration = true;
       };
     };
   in {

@@ -100,37 +100,43 @@
     htop.enable = true;
     jq.enable = true;
     starship.enable = true;
-  };
-
-  programs.direnv = {
-    enable = true;
-    enableBashIntegration = true;
-    nix-direnv = {enable = true;};
-  };
-
-  programs.git = {
-    enable = true;
-    lfs.enable = true;
-    delta.enable = true;
-    userName = "Robbin Bonthond";
-    userEmail = "robbin@bonthond.com";
-    aliases = {
-      ci = "commit";
-      co = "checkout";
+    direnv = {
+      enable = true;
+      enableBashIntegration = true;
+      nix-direnv = {enable = true;};
     };
-    extraConfig = {
-      color = {
-        diff = "auto";
-        status = "auto";
-        branch = "auto";
-        ui = "auto";
+    git = {
+      enable = true;
+      lfs.enable = true;
+      delta.enable = true;
+      userName = "Robbin Bonthond";
+      userEmail = "robbin@bonthond.com";
+      aliases = {
+        ci = "commit";
+        co = "checkout";
+      };
+      extraConfig = {
+        color = {
+          diff = "auto";
+          status = "auto";
+          branch = "auto";
+          ui = "auto";
+        };
       };
     };
-  };
-
-  programs.eza = {
-    enable = true;
-    enableAliases = true;
+    eza = {
+      enable = true;
+      enableAliases = true;
+    };
+    vscode = {
+      enable = true;
+      enableUpdateCheck = false;
+    };
+    firefox.package = pkgs.firefox.override {
+      cfg = {
+        enablePlasmaBrowserIntegration = true;
+      };
+    };
   };
 
   #services.plasma5Packages.kdeconnect.enable = true;
