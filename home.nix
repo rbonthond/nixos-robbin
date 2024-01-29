@@ -17,6 +17,7 @@
   home.packages = with pkgs; [
     aha
     alejandra
+    apptainer
     bash
     bat
     blender
