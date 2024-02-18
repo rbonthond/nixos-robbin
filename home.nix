@@ -14,6 +14,8 @@
     "Xfg.dpi" = 172;
   };
 
+  fonts.fontconfig.enable = true;
+
   home.packages = with pkgs; [
     aha
     alejandra
@@ -28,7 +30,7 @@
     curl
     delta
     direnv
-    eza
+    lsd
     fd
     firefox
     fwupd
@@ -59,6 +61,7 @@
     mc
     meld
     ncdu
+    nerdfonts
     neofetch
     nextflow
     nix-direnv
@@ -125,7 +128,7 @@
         };
       };
     };
-    eza = {
+    lsd = {
       enable = true;
       enableAliases = true;
     };
