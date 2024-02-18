@@ -69,7 +69,7 @@
     perl
     pigz
     procs
-    python311
+    python312
     rclone
     ripgrep
     rsync
