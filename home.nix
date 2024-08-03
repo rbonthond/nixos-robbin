@@ -65,6 +65,7 @@
     neofetch
     nextflow
     nix-direnv
+    nixfmt
     p4
     p4v
     p7zip
@@ -137,9 +138,7 @@
       enableUpdateCheck = false;
     };
     firefox.package = pkgs.firefox.override {
-      cfg = {
-        enablePlasmaBrowserIntegration = true;
-      };
+      cfg = {enablePlasmaBrowserIntegration = true;};
     };
   };
 
