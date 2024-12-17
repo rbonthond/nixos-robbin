@@ -61,11 +61,10 @@
     mc
     meld
     ncdu
-    nerdfonts
+    nerd-fonts.jetbrains-mono
     neofetch
     nextflow
     nix-direnv
-    nixfmt
     p4
     p4v
     p7zip
