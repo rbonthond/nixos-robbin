@@ -49,8 +49,8 @@
     jetbrains.pycharm-professional
     jetbrains.webstorm
     jq
-    kate
-    kdevelop
+    kdePackages.kate
+    kdePackages.kdevelop
     kdiff3
     krita
     ksh
@@ -60,6 +60,7 @@
     lm_sensors
     mc
     meld
+    nedit
     ncdu
     nerd-fonts.jetbrains-mono
     neofetch
@@ -107,7 +108,7 @@
     direnv = {
       enable = true;
       enableBashIntegration = true;
-      nix-direnv = {enable = true;};
+      nix-direnv.enable = true;
     };
     git = {
       enable = true;
@@ -119,13 +120,11 @@
         ci = "commit";
         co = "checkout";
       };
-      extraConfig = {
-        color = {
-          diff = "auto";
-          status = "auto";
-          branch = "auto";
-          ui = "auto";
-        };
+      extraConfig.color = {
+        diff = "auto";
+        status = "auto";
+        branch = "auto";
+        ui = "auto";
       };
     };
     lsd = {
@@ -134,10 +133,10 @@
     };
     vscode = {
       enable = true;
-      enableUpdateCheck = false;
+      profiles.default.enableUpdateCheck = false;
     };
     firefox.package = pkgs.firefox.override {
-      cfg = {enablePlasmaBrowserIntegration = true;};
+      cfg.enablePlasmaBrowserIntegration = true;
     };
   };
 
