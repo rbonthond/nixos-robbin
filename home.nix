@@ -129,7 +129,8 @@
     };
     lsd = {
       enable = true;
-      enableAliases = true;
+      #enableAliases = true;
+      enableBashIntegration = true;
     };
     vscode = {
       enable = true;
