@@ -56,7 +56,7 @@
     ksh
     lfs
     libreoffice-qt
-    libsForQt5.libksysguard
+    #libsForQt5.libksysguard
     lm_sensors
     mc
     meld
