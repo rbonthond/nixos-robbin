@@ -37,7 +37,8 @@
     fzf
     git
     git-lfs
-    glxinfo
+    dysk
+    mesa-demos 
     go
     google-chrome
     gzip
@@ -54,7 +55,6 @@
     kdiff3
     krita
     ksh
-    lfs
     libreoffice-qt
     #libsForQt5.libksysguard
     lm_sensors
@@ -94,7 +94,8 @@
     xz
     zoom-us
     zsh
-    whatsapp-for-linux
+    #whatsapp-for-linux
+    wasistlos 
   ];
 
   programs = {
@@ -110,21 +111,26 @@
       enableBashIntegration = true;
       nix-direnv.enable = true;
     };
+    delta = {
+      enable = true;
+      enableGitIntegration = true;
+    };
     git = {
       enable = true;
       lfs.enable = true;
-      delta.enable = true;
-      userName = "Robbin Bonthond";
-      userEmail = "robbin@bonthond.com";
-      aliases = {
-        ci = "commit";
-        co = "checkout";
-      };
-      extraConfig.color = {
-        diff = "auto";
-        status = "auto";
-        branch = "auto";
-        ui = "auto";
+      settings = {
+        user.name = "Robbin Bonthond";
+        user.email = "robbin@bonthond.com";
+        alias = {
+          ci = "commit";
+          co = "checkout";
+        };
+        color = {
+          diff = "auto";
+          status = "auto";
+          branch = "auto";
+          ui = "auto";
+        };
       };
     };
     lsd = {
