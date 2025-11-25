@@ -9,12 +9,16 @@
     homeDirectory = "/home/robbin";
   };
 
-  xresources.properties = {
-    "Xcursor.size" = 16;
-    "Xfg.dpi" = 172;
+  xresources = {
+    properties = {
+      "Xcursor.size" = 16;
+      "Xfg.dpi" = 172;
+    };
   };
 
-  fonts.fontconfig.enable = true;
+  fonts = {
+    fontconfig.enable = true;
+  };
 
   home.packages = with pkgs; [
     aha
@@ -38,7 +42,7 @@
     git
     git-lfs
     dysk
-    mesa-demos 
+    mesa-demos
     go
     google-chrome
     gzip
@@ -56,7 +60,6 @@
     krita
     ksh
     libreoffice-qt
-    #libsForQt5.libksysguard
     lm_sensors
     mc
     meld
@@ -95,7 +98,7 @@
     zoom-us
     zsh
     #whatsapp-for-linux
-    wasistlos 
+    wasistlos
   ];
 
   programs = {
@@ -147,6 +150,7 @@
     };
   };
 
-  #services.plasma5Packages.kdeconnect.enable = true;
-  services.kdeconnect.enable = true;
+  services = {
+    kdeconnect.enable = true;
+  };
 }
