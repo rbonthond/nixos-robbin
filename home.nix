@@ -51,7 +51,7 @@
     hyperfine
     jetbrains.datagrip
     jetbrains.goland
-    jetbrains.pycharm-professional
+    jetbrains.pycharm
     jetbrains.webstorm
     jq
     kdePackages.kate
@@ -63,7 +63,7 @@
     lm_sensors
     mc
     meld
-    nedit
+    #nedit
     ncdu
     nerd-fonts.jetbrains-mono
     neofetch
