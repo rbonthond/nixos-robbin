@@ -66,7 +66,7 @@
     #nedit
     ncdu
     nerd-fonts.jetbrains-mono
-    neofetch
+    fastfetch
     nextflow
     nix-direnv
     p4
