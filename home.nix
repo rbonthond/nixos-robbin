@@ -99,6 +99,7 @@
     zsh
     #whatsapp-for-linux
     wasistlos
+    simple-scan
   ];
 
   programs = {
