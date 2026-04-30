@@ -54,8 +54,11 @@
     jetbrains.pycharm
     jetbrains.webstorm
     jq
+    kdePackages.ark
     kdePackages.kate
     kdePackages.kdevelop
+    kdePackages.kamoso
+    snapshot
     kdiff3
     krita
     ksh
@@ -93,7 +96,7 @@
     vulkan-tools
     wayland-utils
     wget
-    xorg.xdpyinfo
+    xdpyinfo
     xz
     zoom-us
     zsh
@@ -136,6 +139,7 @@
           ui = "auto";
         };
       };
+      signing.format = null;
     };
     lsd = {
       enable = true;
