@@ -101,7 +101,7 @@
     zoom-us
     zsh
     #whatsapp-for-linux
-    wasistlos
+    #wasistlos
     simple-scan
   ];
 
