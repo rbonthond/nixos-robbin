@@ -7,24 +7,24 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs @ {
+  outputs = {
     self,
     nixpkgs,
     home-manager,
+    ...
   }: let
     system = "x86_64-linux";
     pkgs = import nixpkgs {
       inherit system;
       config = {
         allowUnfree = true;
-        keep-derivations = true;
-        keep-outputs = true;
-        inputs-fonts.acceptLicense = true;
       };
     };
   in {
-    home-manager.useUserPackages = true;
-    home-manager.useGlobalPkgs = true;
+    formatter.${system} = pkgs.alejandra;
+
+    checks.${system}.home = self.homeConfigurations.robbin.activationPackage;
+
     homeConfigurations = {
       "robbin" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
